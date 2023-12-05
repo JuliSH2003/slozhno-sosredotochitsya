@@ -8,13 +8,13 @@
   margin-bottom: 52px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header {
     height: 1024px;
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header {
     height: 668px;
     margin-bottom: 30px;
@@ -28,7 +28,7 @@
   width: 1024px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__theme-menu {
     display: inline-flex;
     justify-content: end;
@@ -37,7 +37,7 @@
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__theme-menu {
     width: 375px;
   }
@@ -54,7 +54,7 @@
   align-items: center;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__theme-menu-list {
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__theme-menu-list {
     top: 55px;
   }
@@ -103,14 +103,14 @@
   margin-right: 10px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__theme-menu-button_type_light {
     margin-right: 20px;
     margin-bottom: 10px;
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__theme-menu-button_type_light {
     margin-right: 10px;
   }
@@ -120,7 +120,7 @@
   margin-right: 10px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__theme-menu-button_type_auto {
     margin-right: 20px;
     margin-bottom: 10px;
@@ -131,7 +131,7 @@
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__theme-menu-button_type_auto {
     margin-right: 10px;
   }
@@ -172,7 +172,7 @@
 }
 
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .corner {
     right: 10px;
     top: 8px;
@@ -206,14 +206,14 @@
   margin: 0;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__title {
     font-size: 120px;
     top: 460px;
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__title {
     font-size: 116px;
     top: 230px;
@@ -235,7 +235,7 @@
   width: 491px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .header__text {
     top: 720px;
     right: 20px;
@@ -244,7 +244,7 @@
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .header__text {
     top: 475px;
     left: 10px;
@@ -261,13 +261,13 @@
   top: 717px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .corner-left {
     top: 970px;
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .corner-left {
     left: 8px;
     top: 624px;
@@ -288,7 +288,7 @@
   grid-row-end: 5;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .first-section__container {
     margin-bottom: 78px;
     margin-left: 20px;
@@ -296,7 +296,7 @@
   }
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .first-section__container {
     display: flex;
     flex-direction: column;
@@ -317,7 +317,7 @@
   margin-right: 20px;
 }
 
-@media(max-width:376px) {
+@media(max-width: 376px) {
   .first-section__title {
     margin-bottom: 20px;
     margin-right: 10px;
@@ -353,7 +353,7 @@
   margin-left: 20px;
 }
 
-@media (max-width:376px) {
+@media (max-width: 376px) {
   .second-section {
     margin-bottom: 50px;
     margin-left: 7px;
@@ -378,13 +378,13 @@
   margin-right: 20px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .second-section__title {
     margin-right: 20px;
   }
 }
 
-@media (max-width:376px) {
+@media (max-width: 376px) {
   .second-section__title {
     display: grid;
     grid-template-columns: 1fr;
@@ -398,7 +398,7 @@
   column-gap: 20px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .second-section__content {
       display: flex;
       flex-direction: column;
@@ -498,7 +498,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .third-section__subtitle {
     margin-left: 20px;
   }
@@ -676,7 +676,7 @@
   height: 768px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .footer__container {
     height: 1024px;
   }
@@ -694,7 +694,7 @@
   right: 20px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .footer__corner {
     top: 4850px;
   }
@@ -718,7 +718,7 @@
   top: 320px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .footer__title {
     top: 469px;
     font-size: 120px;
@@ -739,7 +739,7 @@
   margin-bottom: 20px;
 }
 
-@media (max-width:769px) {
+@media (max-width: 769px) {
   .footer__corner-left {
     top: 887px;
   }
