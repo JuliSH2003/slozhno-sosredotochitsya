@@ -10,3 +10,298 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+/* Темная тема */
+.theme-neon {
+  background-color: var(--color-dark);
+  color: var(--color-powdery);
+}
+
+.theme-neon .header__theme-menu-button {
+  color: var(--color-neon-pink);
+}
+
+.theme-neon .header__theme-menu-button:hover {
+  border: 1px solid var(--color-neon-pink);
+  height: 26px;
+  padding: 0px 13px;
+}
+
+/* уголок правый */
+.theme-neon .corner {
+  border-top: 1px solid var(--color-neon-pink);
+  border-right: 1px solid var(--color-neon-pink);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+}
+
+@media(max-width:376px) {
+  .theme-neon .corner {
+    right: 10px;
+  }
+}
+
+.theme-neon .rec {
+  position: absolute;
+  right: 30px;
+}
+
+.theme-neon .header {
+  position: relative;
+  width: 1024px;
+  min-height: 768px;
+  background: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
+}
+
+@media (max-width:769px) {
+  .theme-neon .header {
+    width: 768px;
+    min-height: 1024px;
+  }
+}
+
+@media(max-width:376px) {
+  .theme-neon .header {
+    width: 375px;
+    min-height: 668px;
+  }
+}
+
+/* заголовок */
+.theme-neon .header__title {
+  color: var(--color-lilac);
+  text-shadow: 4px 4px 0px var(--color-neon-pink);
+}
+
+.theme-neon .header__text {
+  background-color: var(--color-neon-pink);
+  color: var(--color-dark);
+}
+
+/* уголок левый */
+.theme-neon .corner-left {
+  border-bottom: 1px solid var(--color-neon-pink);
+  border-left: 1px solid var(--color-neon-pink);
+}
+
+/* первая секция */
+
+.theme-neon .first-section__title {
+  color: var(--color-neon-pink);
+}
+  
+.theme-neon .first-section__right-block-title {
+  background-color: var(--color-neon-pink);
+}
+
+.theme-neon .first-section__first-right-block__title {
+  color: var(--color-dark);
+}
+
+.theme-neon .first-section__third-right-block__title  {
+  color: var(--color-dark);
+}
+  
+.theme-neon .first-section__right-text {
+  color: var(--color-peachy);
+}
+
+/* вторая секция */
+
+.theme-neon .second-section__title-content {
+  color: var(--color-neon-pink);
+}
+
+.theme-neon .second-section__columns-title {
+  background-color: var(--color-neon-pink);
+}
+
+.theme-neon .second__columns-title {
+  color: var(--color-dark);
+}
+
+.theme-neon .second__columns-text {
+  color: var(--color-peachy);
+}
+
+/* третья секция */
+  /* заголовок */
+.theme-neon .third-section__title {
+  color: var(--color-dark);
+}
+
+.theme-neon .third-section__left-title {
+  color: var(--color-neon-pink);
+}
+
+/* подзаголовок */
+.theme-neon .third-section__right-content__subtitle {
+  background-color: var(--color-neon-pink);
+}
+
+.theme-neon .third-section__subtitle {
+  color: var(--color-dark);
+}
+
+.theme-neon .third-section__text {
+  color: var(--color-peachy);
+}
+
+.theme-neon .third-section__right-content__title {
+  background-color: var(--color-neon-pink);
+}
+
+/* четвертая секция */
+.theme-neon .fourth-section__title {
+  background-color: var(--color-neon-pink);
+}
+  
+.theme-neon .fourth-title {
+  color: var(--color-dark);
+}
+
+.theme-neon .footer__title {
+  color: var(--color-lilac);
+  text-shadow: 2px 2px 0px var(--color-neon-pink);
+}
+
+/* В зависимости от системных настроек */
+@media (prefers-color-scheme: dark) {
+  .theme-auto {
+    background-color: var(--color-dark);
+    color: var(--color-powdery);
+  }
+
+  .theme-auto .header__theme-menu-button {
+    color: var(--color-neon-pink);
+  }
+
+  .theme-auto .header__theme-menu-button:hover {
+    border: 1px solid var(--color-neon-pink);
+    height: 26px;
+    padding: 0px 13px;
+  }
+
+  /* уголок правый */
+  .theme-auto .corner {
+    border-top: 1px solid var(--color-neon-pink);
+    border-right: 1px solid var(--color-neon-pink);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+  }
+
+  @media(max-width:376px) {
+    .theme-auto .corner {
+      right: 10px;
+    }
+  }
+
+  .theme-auto .theme-neon .rec {
+    position: absolute;
+    right: 30px;
+  }
+
+  .theme-auto .header {
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
+  }
+
+    /* заголовок */
+  .theme-auto .header__title {
+    color: var(--color-lilac);
+    text-shadow: 4px 4px 0px var(--color-neon-pink);
+  }
+
+  .theme-auto .header__text {
+    background-color: var(--color-neon-pink);
+  }
+
+  /* уголок левый */
+  .theme-auto .corner-left {
+    border-bottom: 1px solid var(--color-neon-pink);
+    border-left: 1px solid var(--color-neon-pink);
+  }
+
+  /* первая секция */
+
+  .theme-auto .first-section__title {
+    color: var(--color-neon-pink);
+  }
+  
+  .theme-auto .first-section__right-block-title {
+    background-color: var(--color-neon-pink);
+  }
+
+  .theme-auto .first-section__first-right-block__title {
+    color: var(--color-dark);
+  }
+
+  .theme-auto .first-section__third-right-block__title  {
+    color: var(--color-dark);
+  }
+  
+  .theme-auto .first-section__right-text {
+    color: var(--color-peachy);
+  }
+
+  /* вторая секция */
+
+  .theme-auto .second-section__title-content {
+    color: var(--color-neon-pink);
+  }
+
+  .theme-auto .second-section__columns-title {
+    background-color: var(--color-neon-pink);
+  }
+
+  .theme-auto .second__columns-title {
+    color: var(--color-dark);
+  }
+
+  .theme-auto .second__columns-text {
+    color: var(--color-peachy);
+  }
+
+  /* третья секция */
+  /* заголовок */
+  .theme-auto .third-section__title {
+    color: var(--color-dark);
+  }
+
+  /* подзаголовок */
+  .theme-auto .third-section__right-content__subtitle {
+    background-color: var(--color-neon-pink);
+  }
+
+  .theme-auto .third-section__subtitle {
+    color: var(--color-dark);
+  }
+
+  .theme-auto .third-section__text {
+    color: var(--color-peachy);
+  }
+
+  .theme-auto .third-section__right-content__title {
+    background-color: var(--color-neon-pink);
+  }
+
+  /* четвертая секция */
+  .theme-auto .fourth-section__title {
+    background-color: var(--color-neon-pink);
+  }
+  
+  .theme-auto .fourth-title {
+    color: var(--color-dark);
+  }
+
+  .theme-auto .footer__title {
+    color: var(--color-lilac);
+    text-shadow: 2px 2px 0px var(--color-neon-pink);
+  }
+}

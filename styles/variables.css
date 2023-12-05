@@ -2,3 +2,13 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --color-powdery: #FFF1F7;
+  --color-pink: #FFC2E6;
+  --color-neon-pink: #FF0070;
+  --color-coral: #FF8DCB;
+  --color-lilac:#DB00FF;
+  --color-peachy: #F1B2CE;
+  --color-black: #353430;
+  --color-dark: #000028;
+}

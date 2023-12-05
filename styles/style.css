@@ -3,3 +3,753 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  margin-bottom: 52px;
+}
+
+@media (max-width:769px) {
+  .header {
+    height: 1024px;
+  }
+}
+
+@media(max-width:376px) {
+  .header {
+    height: 668px;
+    margin-bottom: 30px;
+  }
+}
+
+.header__theme-menu {
+  display: inline-flex;
+  justify-content: center;
+  align-items: start;
+  width: 1024px;
+}
+
+@media (max-width:769px) {
+  .header__theme-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: start;
+    width: 768px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__theme-menu {
+    width: 375px;
+  }
+}
+
+/* Удаление маркеров списка */
+.header__theme-menu-list {
+  list-style: none;
+  padding-left: 0;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0px 13px;
+  justify-content: end;
+  align-items: center;
+}
+
+@media (max-width:769px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 170px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__theme-menu-list {
+    top: 55px;
+  }
+}
+
+/* кнопки */
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  height: 26px;
+  padding: 0px 13px;
+  font-size: 18px;
+  text-transform: lowercase;
+  font-family: "IBM Plex mono";
+  font-weight: normal;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: start;
+}
+
+.header__theme-menu-button:hover {
+  height: 26px;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button:focus {
+  text-decoration-line: underline;
+  height: 26px;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button_type_light {
+  margin-right: 10px;
+}
+
+@media (max-width:769px) {
+  .header__theme-menu-button_type_light {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__theme-menu-button_type_light {
+    margin-right: 10px;
+  }
+}
+
+.header__theme-menu-button_type_auto {
+  margin-right: 10px;
+}
+
+@media (max-width:769px) {
+  .header__theme-menu-button_type_auto {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header__theme-menu-button_type_dark {
+    margin-right: 20px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__theme-menu-button_type_auto {
+    margin-right: 10px;
+  }
+
+  .header__theme-menu-button_type_dark {
+    margin-right: 10px;
+  }
+}
+
+/* уголок правый */
+.corner {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.rec {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rec__text {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "IBM Plex mono";
+  font-weight: normal;
+  color: var(--color-neon-pink);
+}
+
+
+@media(max-width:376px) {
+  .corner {
+    right: 10px;
+    top: 8px;
+  }
+  
+  .rec {
+    right: 20px;
+    top: 10px;
+  }
+}
+
+.ellipse {
+  border-radius: 50px;
+  filter: drop-shadow(0px 0px 4px var(--color-neon-pink));
+  width: 9px;
+  height: 9px;
+  background-color:var(--color-neon-pink);
+}
+
+/* заголовок */
+.header__title {
+  color: var(--color-pink);
+  text-shadow: 4px 4px 0px var(--color-neon-pink);
+  font-family: "IBM Plex mono";
+  font-size: 157px;
+  font-weight: bold;
+  line-height: 82.5%; 
+  position: absolute;
+  top: 313px;
+  padding: 0px;
+  margin: 0;
+}
+
+@media (max-width:769px) {
+  .header__title {
+    font-size: 120px;
+    top: 460px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__title {
+    font-size: 116px;
+    top: 230px;
+    width: 355px;
+  }
+}
+
+/* текст хедера */
+.header__text {
+  position: absolute;
+  top: 556px;
+  left: 506px;
+  right: 20px;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  width: 491px;
+}
+
+@media (max-width:769px) {
+  .header__text {
+    top: 720px;
+    right: 20px;
+    left: 380px;
+    width: 364px;
+  }
+}
+
+@media(max-width:376px) {
+  .header__text {
+    top: 475px;
+    left: 10px;
+    width: 355px;
+  }
+}
+
+/* уголок левый */
+.corner-left {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  top: 717px;
+}
+
+@media (max-width:769px) {
+  .corner-left {
+    top: 970px;
+  }
+}
+
+@media(max-width:376px) {
+  .corner-left {
+    left: 8px;
+    top: 624px;
+  }
+}
+
+/* первая секция */
+
+.first-section__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 78px;
+  margin-left: 20px;
+}
+
+.first-section__block-size-big {
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+@media (max-width:769px) {
+  .first-section__container {
+    margin-bottom: 78px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media(max-width:376px) {
+  .first-section__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.first-section__title {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+
+@media(max-width:376px) {
+  .first-section__title {
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+}
+
+.first-section__right-block-title {
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.first-section__right-text {
+  margin: 0;
+  padding: 0;
+}
+
+.first-section__second-right-block__text {
+  margin-bottom: 20px;
+}
+
+.first-section__right-text {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; 
+}
+
+/* вторая секция */
+
+.second-section {
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+
+@media (max-width:376px) {
+  .second-section {
+    margin-bottom: 50px;
+    margin-left: 7px;
+  }
+}
+
+
+.second-section__title-content {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin: 0;
+  padding: 0;
+}
+
+.second-section__title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width:769px) {
+  .second-section__title {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width:376px) {
+  .second-section__title {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 10px;
+  }
+}
+
+.second-section__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+@media (max-width:769px) {
+  .second-section__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+}
+
+.second-section__columns-title {
+  margin-bottom: 10px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.second__columns-title {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin: 0;
+  padding: 0;
+}
+
+.second__columns-text {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin: 0;
+  padding: 0;
+}
+
+/* третья секция */
+.third-section {
+  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 769px) {
+  .third-section {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .third-section {
+    margin-bottom: 45px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+.third-section__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+ 
+/* заголовок */
+.third-section__title {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+  .third-section__right-content {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .third-section__container {
+    grid-template-columns: 1fr;
+  }
+
+  .third-section__right-content {
+    margin: 0;
+  }
+}
+
+/* подзаголовок */
+
+.third-section__subtitle {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width:769px) {
+  .third-section__subtitle {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .third-section__subtitle {
+    margin-left: 7px;
+  }
+}
+
+.third-section__text {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+  .third-section__first-text {
+    max-width: 472px;
+  }
+}
+
+@media (max-width: 376px) {
+  .third-section__first-text {
+    max-width: 355px;
+  }
+
+  .third-section__read-text {
+    margin-bottom: 0px;
+  }
+}
+
+/* четвертая секция */
+.fourth-section {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 376px) {
+  .fourth-section {
+    margin-bottom: 40px;
+  }
+}
+
+.fourth-title {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  margin-left: 17px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 376px) {
+  .fourth-title {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.fourth-section__container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 985px;
+  max-height: 1048px; /* Высота установлена в соответствии с пропорциями изображений */
+  margin: 15px;
+}
+
+@media (max-width: 769px) {
+  .fourth-section__container {
+    max-width: 725px;
+    max-height: 775px; /* Высота установлена в соответствии с пропорциями изображений */
+  }
+}
+
+@media (max-width: 376px) {
+  .fourth-section__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 355px;
+    max-height: 1380px;
+    margin: 0;
+    gap: 10px;
+  }
+}
+
+.fourth-section__first-image { /* sunset */
+  grid-area: sunset;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 376px) {
+  .fourth-section__first-image { /* sunset */
+    width: 355px;
+    height: 142px;
+  }
+}
+
+.fourth-section__second-image { /* ice-cream */
+  grid-area: ice-cream;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 376px) {
+  .fourth-section__second-image { /* ice-cream */
+    width: 355px;
+    height: 355px;
+  }
+}
+
+.fourth-section__third-image { /* books */
+  grid-area: books;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 376px) {
+  .fourth-section__third-image { /* books */
+    width: 355px;
+    height: 355px;
+    order: 2;
+  }
+}
+
+.fourth-section__fourth-image { /* tape */
+  grid-area: tape;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 376px) {
+  .fourth-section__fourth-image { /* tape */
+    width: 355px;
+    height: 237px;
+    order: 1;
+  }
+}
+
+.fourth-section__fifth-image { /* street */
+  grid-area: street;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 376px) {
+  .fourth-section__fifth-image { /* street */
+    width: 355px;
+    height: 237px;
+    order: 3;
+  }
+}
+
+.footer__container {
+  height: 768px;
+}
+
+@media (max-width:769px) {
+  .footer__container {
+    height: 1024px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer__container {
+    height: 667px;
+  }
+}
+
+.footer__corner {
+  position: relative;
+  top: 4260px;
+  right: 20px;
+}
+
+@media (max-width:769px) {
+  .footer__corner {
+    top: 4850px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer__corner {
+    top: 6111px;
+    margin-right: 0;
+  }
+}
+
+.footer__title {
+  font-family: "IBM Plex Mono";
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; 
+  text-align: center;
+  position: relative;
+  top: 320px;
+}
+
+@media (max-width:769px) {
+  .footer__title {
+    top: 469px;
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer__title {
+    top: 286px;
+    font-size: 116px;
+  }
+}
+
+.footer__corner-left {
+  position: relative;
+  top: 597px;
+  left: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width:769px) {
+  .footer__corner-left {
+    top: 887px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer__corner-left {
+    position: relative;
+    top: 536px;
+    left: 8px;
+    margin-bottom: 10px;
+  }
+}
