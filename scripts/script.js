@@ -1,10 +1,16 @@
 let buttons = document.querySelectorAll('.header__theme-menu-button');
 
-// Получаем тему из localStorage
 let theme = localStorage.getItem('theme');
-if (theme) {
-  document.body.classList.add(theme);
+
+if(!theme) {
+  theme = 'theme-day'; // или 'theme-neon'
+  localStorage.setItem('theme', theme);
 }
+
+document.body.classList.add(theme);
+
+// Получаем тему из localStorage
+
 
 buttons.forEach(button => {
   button.addEventListener('click', function () {

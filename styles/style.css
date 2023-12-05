@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-attachment: fixed
 }
 
 .header {
