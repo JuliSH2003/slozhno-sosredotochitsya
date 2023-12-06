@@ -15,7 +15,7 @@
 /* Темная тема */
 .theme-neon {
   background-color: var(--color-dark);
-  color: var(--color-powdery);
+  color: var(--color-neon-pink);
 }
 
 .theme-neon .header__theme-menu-button {
@@ -101,7 +101,7 @@
   color: var(--color-dark);
 }
 
-.theme-neon .first-section__third-right-block__title  {
+.theme-neon .first-section__third-right-block__title {
   color: var(--color-dark);
 }
   
