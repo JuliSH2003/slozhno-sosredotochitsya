@@ -36,6 +36,12 @@
   right: 20px;
 }
 
+@media(max-width: 768px) {
+  .theme-day .corner {
+    right: 13px;
+  }
+}
+
 @media(max-width:376px) {
   .theme-day .corner {
     right: 10px;
@@ -162,3 +168,8 @@
   text-shadow: 2px 2px 0px var(--color-neon-pink);
 }
 
+@media (max-width: 769px) {
+  .theme-day .footer__corner {
+    right: 22px;
+  }
+}

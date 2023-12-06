@@ -38,6 +38,12 @@
   right: 20px;
 }
 
+@media(max-width: 768px) {
+  .theme-neon .corner {
+    right: 13px;
+  }
+}
+
 @media(max-width:376px) {
   .theme-neon .corner {
     right: 10px;
@@ -171,4 +177,11 @@
   color: var(--color-lilac);
   text-shadow: 2px 2px 0px var(--color-neon-pink);
 }
+
+@media (max-width: 769px) {
+  .theme-neon .footer__corner {
+    right: 22px;
+  }
+}
+
 
