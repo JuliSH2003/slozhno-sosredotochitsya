@@ -46,7 +46,7 @@
 
 @media(max-width:376px) {
   .theme-neon .corner {
-    right: 10px;
+    right: 20px;
   }
 }
 
@@ -71,7 +71,7 @@
 
 @media(max-width:376px) {
   .theme-neon .header {
-    width: 375px;
+    width: 100%;
     min-height: 668px;
   }
 }
@@ -184,4 +184,9 @@
   }
 }
 
+@media (max-width: 376px) {
+  .theme-neon .footer__corner {
+    right: 10px;
+  }
+}
 
