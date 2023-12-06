@@ -91,6 +91,20 @@
   border-left: 1px solid var(--color-black);
 }
 
+/* ссылка */
+.theme-day .reference {
+  color: var(--color-black);
+  text-shadow: 2px 2px 0px var(--color-coral);
+}
+
+.theme-day .reference::after {
+  background-color: var(--color-black);
+}
+
+.theme-day .reference::before {
+  border: 1px solid var(--color-coral);
+
+}
 /* первая секция */
 
 .theme-day .first-section__title {

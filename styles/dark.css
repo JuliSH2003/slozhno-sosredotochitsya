@@ -93,6 +93,21 @@
   border-left: 1px solid var(--color-neon-pink);
 }
 
+/* ссылка */
+.theme-neon .reference {
+  color: var(--color-peachy);
+  text-shadow: 2px 2px 0px var(--color-neon-pink);
+}
+
+.theme-neon .reference::after {
+  background-color: var(--color-peachy);
+}
+
+.theme-neon .reference::before {
+  border: 1px solid var(--color-peachy);
+}
+
+
 /* первая секция */
 
 .theme-neon .first-section__title {
