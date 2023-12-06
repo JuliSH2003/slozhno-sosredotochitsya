@@ -4,9 +4,25 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-attachment: fixed
 }
+.container {
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+@media (max-width: 769px) {
+  .container {
+    max-width: 728px;
+  }
+}
+
+@media(max-width: 376px) {
+  .container {
+    max-width: 356px;
+  }
+}
 
 .header {
-  margin-bottom: 52px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 769px) {
@@ -53,6 +69,8 @@
   padding: 0px 13px;
   justify-content: end;
   align-items: center;
+  margin-top: 20px;
+  margin-left: 33px;
 }
 
 @media (max-width: 769px) {
@@ -147,13 +165,13 @@
   height: 25px;
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 20px;
 }
 
 .rec {
   position: absolute;
   right: 30px;
-  top: 15px;
+  top: 20px;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
@@ -201,7 +219,7 @@
   font-weight: bold;
   line-height: 82.5%;
   position: absolute;
-  top: 313px;
+  top: 320px;
   padding: 0px;
   margin: 0;
 }
@@ -224,8 +242,7 @@
 /* текст хедера */
 .header__text {
   position: absolute;
-  top: 556px;
-  left: 506px;
+  top: 560px;
   right: 20px;
   font-family: "IBM Plex Mono";
   font-size: 18px;
@@ -258,7 +275,7 @@
   height: 25px;
   position: absolute;
   left: 20px;
-  top: 717px;
+  top: 720px;
 }
 
 @media (max-width: 769px) {
@@ -279,8 +296,7 @@
 .first-section__container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 78px;
-  margin-left: 20px;
+  margin-bottom: 80px;
 }
 
 .first-section__block-size-big {
@@ -314,7 +330,7 @@
   line-height: 23.4px;
   padding: 0;
   margin: 0;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 @media(max-width: 376px) {
@@ -327,10 +343,6 @@
 .first-section__right-block-title {
   height: 24px;
   margin-bottom: 10px;
-}
-
-.first-section__second-right-block__text {
-  margin-bottom: 20px;
 }
 
 .first-section__right-text {
@@ -347,7 +359,6 @@
 
 .second-section {
   margin-bottom: 80px;
-  margin-left: 20px;
 }
 
 @media (max-width: 376px) {
@@ -372,7 +383,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 @media (max-width: 769px) {
@@ -406,7 +416,6 @@
 .second-section__columns-title {
   margin-bottom: 10px;
   height: 24px;
-  margin-right: 20px;
 }
 
 .second__columns-title {
@@ -432,8 +441,6 @@
 /* третья секция */
 .third-section {
   margin-bottom: 60px;
-  margin-left: 20px;
-  margin-right: 15px;
 }
 
 @media (max-width: 769px) {
@@ -551,8 +558,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  margin-left: 17px;
-  margin-right: 20px;
   margin-bottom: 0px;
 }
 
@@ -575,7 +580,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   max-width: 985px;
   max-height: 1048px; /* Высота установлена в соответствии с пропорциями изображений */
-  margin: 15px;
+  margin-top: 15px;
 }
 
 @media (max-width: 769px) {
@@ -712,7 +717,7 @@
   line-height: 82.5%;
   text-align: center;
   position: relative;
-  top: 320px;
+  top: 340px;
 }
 
 @media (max-width: 769px) {
@@ -731,8 +736,8 @@
 
 .footer__corner-left {
   position: relative;
-  top: 597px;
-  left: 20px;
+  top: 615px;
+  left: 0;
   margin-bottom: 20px;
 }
 

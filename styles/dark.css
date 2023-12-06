@@ -97,6 +97,10 @@
   background-color: var(--color-neon-pink);
 }
 
+.theme-neon .first-section__second-right-block__text {
+  margin-bottom: 20px;
+}
+
 .theme-neon .first-section__first-right-block__title {
   color: var(--color-dark);
 }

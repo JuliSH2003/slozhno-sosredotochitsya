@@ -95,6 +95,10 @@
   background-color: var(--color-coral);
 }
 
+.theme-day .first-section__second-right-block__text {
+  margin-bottom: 20px;
+}
+
 .theme-day .first-section__right-text {
   color: var(--color-black);
 }
