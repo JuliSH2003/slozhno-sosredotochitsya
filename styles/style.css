@@ -275,6 +275,7 @@
   margin: 0;
   padding: 0;
   line-height: 23.4px;
+  color: var(--color-dark);
 }
 
 /* ссылка */
@@ -363,8 +364,7 @@
   }
 }
 
-.title-decor {
-  background-color: var(--accent-color);
+.block-title {
   color: var(--color-dark);
 }
 
@@ -459,7 +459,7 @@
 .concentration-section__title {
   font-family: var(--main-font, "IBM Plex mono", monospace);
   font-size: var(--main-font-size);
-  font-weight: var(--main-font-style);
+  font-style: var(--main-font-style);
   font-weight: var(--main-font-weight-bold);
   line-height: 23.4px; /* 130% */
   margin: 0;
@@ -598,9 +598,6 @@
   .picture-section__image-container {
     display: flex;
     flex-direction: column;
-  }
-
-  .picture-section__image-container {
     gap: 10px;
     margin-top: 10px;
   }
