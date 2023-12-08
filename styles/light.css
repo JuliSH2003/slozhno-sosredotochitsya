@@ -9,187 +9,27 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-attachment: fixed
+  --text-color: #353430;
+  --color-dark: #353430;
+  --accent-color: #FF8DCB;
+  --neon-color: #FF0070;
+  --color-brand: #FFC2E6;
+  --secondary-color: #353430;
+  --color-transparent: rgb(50, 49, 45, 0.4);
+  --page-background-color: #FFF1F7;
+  --page-background-image: url(../images/cover-image-light.png);
 }
 
-/* Светлая тема */
-.theme-day {
-  background-color: var(--color-powdery);
-  color: var(--color-black);
-}
-
-.theme-day .header__theme-menu-button {
-  color: var(--color-black);
-}
-
-.theme-day .header__theme-menu-button:hover {
-  border: 1px solid var(--color-black);
-}
-
-/* уголок правый */
-.theme-day .corner {
-  border-top: 1px solid var(--color-black);
-  border-right: 1px solid var(--color-black);
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  right: 20px;
-}
-
-@media(max-width: 768px) {
-  .theme-day .corner {
-    right: 13px;
-  }
-}
-
-@media(max-width:376px) {
-  .theme-day .corner {
-    right: 20px;
-  }
-}
-
-.theme-day .rec {
-  display: none;
-}
-
-.theme-day .header {
-  position: relative;
-  width: 1024px;
-  min-height: 768px;
-  background: url(../images/cover-image-light.png), lightgray 50% / cover no-repeat;
-}
-
-@media (max-width:769px) {
-  .theme-day .header {
-    width: 768px;
-    min-height: 1024px;
-  }
-}
-
-@media(max-width:376px) {
-  .theme-day .header {
-    width: 375px;
-    min-height: 668px;
-  }
-}
-
-/* заголовок */
-.theme-day .header__title {
-  color: var(--color-pink);
-  text-shadow: 4px 4px 0px var(--color-neon-pink);
-}
-
-/* текст хедера */
-.theme-day .header__text {
-  color: var(--color-dark);
-  background-color: var(--color-coral);
-}
-
-/* уголок левый */
-.theme-day .corner-left {
-  border-bottom: 1px solid var(--color-black);
-  border-left: 1px solid var(--color-black);
-}
-
-/* ссылка */
-.theme-day .reference {
-  color: var(--color-black);
-  text-shadow: 2px 2px 0px var(--color-coral);
-}
-
-.theme-day .reference::after {
-  background-color: var(--color-black);
-}
-
-.theme-day .reference::before {
-  border: 1px solid var(--color-coral);
-
-}
-/* первая секция */
-
-.theme-day .first-section__title {
-  color: var(--color-black);
-}
-
-.theme-day .first-section__right-block-title {
-  background-color: var(--color-coral);
-}
-
-.theme-day .first-section__second-right-block__text {
-  margin-bottom: 20px;
-}
-
-.theme-day .first-section__right-text {
-  color: var(--color-black);
-}
-
-/* вторая секция */
-
-.theme-day .second-section__title-content {
-  color: var(--color-black);
-}
-
-.theme-day .second-section__columns-title {
-  background-color: var(--color-coral);
-}
-
-.theme-day .second__columns-title {
-  color: var(--color-black);
-}
-
-.theme-day .second__columns-text {
-  color: var(--color-black);
-}
-
-/* третья секция */
-/* заголовок */
-.theme-day .third-section__title {
-  color: var(--color-black);
-}
-
-.theme-day .third-section__right-content__title {
-  background-color: var(--color-coral);
-}
-
-/* подзаголовок */
-.theme-day .third-section__right-content__subtitle {
-  background-color: var(--color-coral);
-}
-
-.theme-day .tthird-section__subtitle {
-  color: var(--color-black);
-}
-
-.theme-day .tthird-section__text {
-  color: var(--color-black);
-}
-
-.third-day .third-section__right-content__title {
-  background-color: var(--color-coral);
-}
-
-/* четвертая секция */
-.theme-day .fourth-section__title {
-  background-color: var(--color-coral);
-}
-
-.theme-day .fourth-title {
-  color: var(--color-black);
-}
-
-.theme-day .footer__title {
-  color: var(--color-pink);
-  text-shadow: 2px 2px 0px var(--color-neon-pink);
-}
-
-@media (max-width: 769px) {
-  .theme-day .footer__corner {
-    right: 22px;
-  }
-}
-
-@media (max-width: 376px) {
-  .theme-day .footer__corner {
-    right: 10px;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --color-dark: #353430;
+    --accent-color: #FF8DCB;
+    --neon-color: #FF0070;
+    --color-brand: #FFC2E6;
+    --secondary-color: #353430;
+    --color-transparent: rgb(50, 49, 45, 0.4);
+    --page-background-color: #FFF1F7;
+    --page-background-image: url(../images/cover-image-light.png);
   }
 }

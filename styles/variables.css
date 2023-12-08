@@ -11,4 +11,9 @@
   --color-peachy: #F1B2CE;
   --color-black: #353430;
   --color-dark: #000028;
+  --main-font: "IBM Plex mono";
+  --main-font-size: 18px;
+  --main-font-weight: 400;
+  --main-font-weight-bold: 700;
+  --main-font-style: normal;
 }
